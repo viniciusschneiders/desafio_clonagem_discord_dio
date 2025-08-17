@@ -4,22 +4,202 @@
   box-sizing: border-box;
 }
 
-
+html,
 body {
+  font-family: "Open Sans", sans-serif;
+  height: 100%;
+}
 
-    font-family: 'Open Sans', sans-serif;
-    height: 100%;
+h2 {
+  font-size: 2.5em;
+  font-weight: 800;
+  color: var(--cinza-escuro);
+}
+
+:root {
+  --cinza-escuro: #23272a;
+}
+
+.cabecalho {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url("./imgs/header_background.png");
+  background-size: cover;
+  /* background-position: contain; */
+  background-repeat: no-repeat;
+}
+
+.container-header {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 24px;
+  align-items: center;
+}
+
+.titulo-cabecalho {
+  color: #fff;
+  font-size: 3.5em;
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+}
+
+.cabecalho p {
+  width: 80%;
+  font-size: 1em;
+  font-weight: 400;
+  color: #fff;
+}
+
+.botoes {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 16px;
+}
+
+.botao {
+  border-radius: 24px;
+  text-decoration: none;
+}
+
+.baixar-windows {
+  padding: 11px 24px;
+  background-color: #fff;
+  font-size: 1em;
+  font-family: "Open Sans", sans-serif;
+  color: var(--cinza-escuro);
+  border: none;
+}
+
+.abrir-navegador {
+  padding: 11px 24px;
+  background-color: var(--cinza-escuro);
+  font-size: 1em;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  border: none;
+}
+
+.primeira-sessao {
+  width: 100%;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+}
+
+.conteudo-sessao {
+  width: 1300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+
+.primeira-sessao-direita {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.primeira-sessao p {
+  font-size: 1em;
+  font-family: "Open Sans", sans-serif;
+  color: var(--cinza-escuro);
+}
+
+/* Fim da Primeira Sessão */
+
+.segunda-sessao {
+
+    display: flex;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    background-color: #f6f6f6;
+}
+
+.segunda-sessao-esquerda{
+
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    color: var(--cinza-escuro);
 
 }
 
 
-.cabecalho {
+.terceira-sessao {
+
+    display: flex;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.terceira-sessao-direita{
+
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    color: var(--cinza-escuro);
+
+}
+
+
+/* Quarta Sessão */
+
+.quarta-sessao {
 
     width: 100%;
-    height: 50vh;
-    background-image: url('./imgs/header_background.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: #f6f6f6;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.conteudo-quarta-sessao {
+
+    width: 1300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+    padding: 40px 0;
+    color: var(--cinza-escuro);
+
+}
+
+.conteudo-quarta-sessao h2 {
+
+
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+}
+
+
+
+footer {
+
+    width: 100%;
+    height: 150px;
+    background-color: var(--cinza-escuro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
